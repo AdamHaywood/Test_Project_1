@@ -15,6 +15,51 @@ project 1 - A Random Quote Generator
   Use console.log() to log your array of quotes to the console.
 ***/
 
+let quotes = [
+  {
+    line: '',
+    character: '',
+    game: '',
+    year: ''
+  },
+  {
+    line: '',
+    character: '',
+    game: '',
+    year: ''
+  },
+  {
+    line: ''.
+    characters: '',
+    game: '',
+    year: ''
+  },
+  {
+    line: '',
+    character: '',
+    game: '',
+    year: ''
+  },
+  {
+    line: '',
+    character: '',
+    game: '',
+    year: ''
+  },
+  {
+    line: '',
+    character: '',
+    game: '',
+    year: ''
+  },
+  {
+    line: '',
+    character: '',
+    game: '',
+    year: ''
+  }
+]
+
 
 
 
