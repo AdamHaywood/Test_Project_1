@@ -17,48 +17,54 @@ project 1 - A Random Quote Generator
 
 let quotes = [
   {
-    line: '',
-    character: '',
-    game: '',
-    year: ''
+    quote: 'Devils never cry.',
+    source: 'Dante',
+    citation: 'Devil May Cry 3',
+    year: '2005'
   },
   {
-    line: '',
-    character: '',
-    game: '',
-    year: ''
+    quote: 'I need more power!',
+    source: 'Vergil',
+    citation: 'Devil May Cry 3',
+    year: '2005'
   },
   {
-    line: ''.
-    characters: '',
-    game: '',
-    year: ''
+    quote: 'I should have been the one to fill your dark soul with light!',
+    source: 'Dante',
+    citation: 'Devil May Cry',
+    year: '2001'
   },
   {
-    line: '',
-    character: '',
-    game: '',
-    year: ''
+    quote: 'SLAM DUNK!',
+    source: 'Nero',
+    citation: 'Devil May Cry 4',
+    year: '2008'
   },
   {
-    line: '',
-    character: '',
-    game: '',
-    year: ''
+    quote: "An opportunity to save the world doesn't happen everyday you know! Savor it.",
+    source: 'Dante',
+    citation: 'Devil May Cry 4',
+    year: '2008'
   },
   {
-    line: '',
-    character: '',
-    game: '',
-    year: ''
+    quote: "You're just dead weight.",
+    source: 'Dante',
+    citation: 'Devil May Cry 5',
+    year: '2019'
   },
   {
-    line: '',
-    character: '',
-    game: '',
-    year: ''
+    quote: 'What form of power is this?',
+    source: 'Vergil',
+    citation: 'Devil May Cry 5',
+    year: '2019'
+  },
+  {
+    quote: 'You look like you need a hug, but you\'re not gonna get one from me. -Better get lost.',
+    source: 'Nero',
+    citation: 'Devil May Cry 5',
+    year: '2019'
   }
-]
+];
 
 
 
@@ -66,10 +72,13 @@ let quotes = [
 /***
   Create the `getRandomQuote` function to:
    - Create a variable to store a random number 
-   - Cse the random number to `return` a random quote object from the `quotes` array.
+   - Use the random number to `return` a random quote object from the `quotes` array.
 ***/
 
-
+function getRandomQuote() {
+  let randomNumber = Math.floor(Math.random * 8);
+  return quotes(randomNumber);
+}
 
 
 /***
