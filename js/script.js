@@ -76,10 +76,9 @@ let quotes = [
 ***/
 
 function getRandomQuote() {
-  let randomNumber = Math.floor(Math.random() * 8);
+  let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
-
 
 /***
   Create the `printQuote` function to: 
@@ -97,18 +96,19 @@ function getRandomQuote() {
 function printQuote() {
   quoteInfo = getRandomQuote();
   htmlString = '';
-    htmlString + '<p class="quote">' + quoteInfo[0] + '</p>';
-    htmlString + '<p class="source">' + quoteInfo[1];
-    if (quoteInfo[2] !== '') {
-      htmlString + '<span class="citation">' + quoteInfo[2] + '</span>'
-      };
-    if (quoteInfo[3] !== '') {
-      htmlString + '<span class="year">' + quoteInfo[3] + '</span>'
-      } ;
-    htmlString + '</p>';
-  return htmlString; //document.getElementById('quote-box').innerHTML = htmlString;
+    htmlString += '<p class="quote">' + quoteInfo.quote + '</p>';
+    htmlString += '<p class="source">' + quoteInfo.source;
+    if (quoteInfo.citation != '') {
+      htmlString += '<span class="citation">' + quoteInfo.citation + '</span>';
+      } else {''}
+    if (quoteInfo.year != '') {
+      htmlString += '<span class="year">' + quoteInfo.year + '</span>';
+      } else {''}
+    htmlString += '</p>';
+  console.log(quoteInfo);
+  return document.getElementById('quote-box').innerHTML = htmlString;
 }
-console.log(printQuote());
+
 
 /***
   When the "Show another quote" button is clicked, the event listener 
